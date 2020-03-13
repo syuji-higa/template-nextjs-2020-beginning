@@ -10,7 +10,7 @@
     "test": "jest src/__tests__/.*/*.test.tsx?$",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "puppeteer-storyshots": "jest src/__tests__/puppeteer-storyshots*.runner.ts$ --config jest.config.js"
+    "puppeteer-storyshots": "jest src/__tests__/puppeteer-storyshots*.runner.ts"
   },
   "dependencies": {
     "next": "9.3.0",
