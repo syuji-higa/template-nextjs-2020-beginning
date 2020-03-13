@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['!.eslintrc.js', '!.babelrc.js'],
+  ignorePatterns: ['!.eslintrc.js', '!.babelrc.js', '!.storybook/**/*.(js|ts)'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',

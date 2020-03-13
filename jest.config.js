@@ -12,5 +12,8 @@ module.exports = {
         jsx: 'react'
       }
     }
+  },
+  transform: {
+    '^.+\\.stories\\.tsx$': '@storybook/addon-storyshots/injectFileName'
   }
 }
