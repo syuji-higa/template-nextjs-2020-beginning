@@ -1,30 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Use
 
-## Getting Started
+- [Next.js](https://nextjs.org/) ([React](https://ja.reactjs.org/))
+- [TypeScript](https://www.typescriptlang.org/)
+- [PWA](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps) ([next-offline](https://github.com/hanford/next-offline))
+- [styled-components](https://styled-components.com/) + [styled-media-query](https://github.com/morajabi/styled-media-query)
+- [EditorConfig](https://editorconfig.org/) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
+- [Jest](https://jestjs.io/ja/) + [React Testing Library](https://testing-library.com/)
+- [Stroybook](https://storybook.js.org/)
+  - addons
+    - [knobs](https://github.com/storybookjs/storybook/tree/master/addons/knobs)
+    - [actions](https://github.com/storybookjs/storybook/tree/master/addons/actions)
+    - [storysource](https://github.com/storybookjs/storybook/tree/master/addons/storysource)
+    - [viewport](https://github.com/storybookjs/storybook/tree/master/addons/viewport)
+    - [storyshots](https://github.com/storybookjs/storybook/tree/master/addons/storyshots)
+    - [backgrounds](https://github.com/storybookjs/storybook/tree/master/addons/backgrounds)
+    - [console](https://github.com/storybookjs/storybook-addon-console)
+    - [links](https://github.com/storybookjs/storybook/tree/master/addons/links)
 
-First, run the development server:
+# Command
 
-```bash
+```sh
+# dev
 npm run dev
-# or
-yarn dev
+
+# build
+npm run build
+
+# start
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Storybook
+```sh
+npm run storybook
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# build
+npu run build-storybook
+```
 
-## Learn More
+## Lint
+```sh
+npm run lint
 
-To learn more about Next.js, take a look at the following resources:
+# auto fix
+npm run lint -- --fix
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Test
+```sh
+npm test
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+# watch
+npm test -- --watch
 
-## Deploy on ZEIT Now
+# update snapshot
+npm test -- -u -t="[TargetName]"
 
-The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# update snapshot all
+npm test -- -u
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# coverage
+npm test -- --coverage
+```
+
+## Image Snapshot
+```sh
+# image snapshot (run while storybook running)
+npm run puppeteer-storyshots
+
+# update image snapshot (run while storybook running)
+npm run puppeteer-storyshots -- -u -t="[TargetName]"
+
+# update image snapshot all (run while storybook running)
+npm run puppeteer-storyshots -- -u
+```
