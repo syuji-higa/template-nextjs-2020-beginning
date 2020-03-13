@@ -4,6 +4,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [PWA](https://developer.mozilla.org/ja/docs/Web/Progressive_web_apps) ([next-offline](https://github.com/hanford/next-offline))
 - [styled-components](https://styled-components.com/) + [styled-media-query](https://github.com/morajabi/styled-media-query)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 - [EditorConfig](https://editorconfig.org/) + [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
 - [Jest](https://jestjs.io/ja/) + [React Testing Library](https://testing-library.com/)
 - [Stroybook](https://storybook.js.org/)
@@ -16,6 +17,7 @@
     - [backgrounds](https://github.com/storybookjs/storybook/tree/master/addons/backgrounds)
     - [console](https://github.com/storybookjs/storybook-addon-console)
     - [links](https://github.com/storybookjs/storybook/tree/master/addons/links)
+- [Husky](https://github.com/typicode/husky)
 
 # Command
 
