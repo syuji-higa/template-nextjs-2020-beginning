@@ -18,6 +18,8 @@
     "@types/react-dom": "^16.9.5",
     "next-offline": "^5.0.0",
     "sanitize.css": "^11.0.0",
+    "styled-components": "^5.0.1",
+    "styled-media-query": "^2.1.2",
     "typescript": "^3.8.3"
   }
 }
