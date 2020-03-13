@@ -1,6 +1,7 @@
+import { NextPage } from 'next'
 import Head from 'next/head'
 
-const Home = () => (
+const Home: NextPage = () => (
   <div className="container">
     <Head>
       <title>Create Next App</title>
