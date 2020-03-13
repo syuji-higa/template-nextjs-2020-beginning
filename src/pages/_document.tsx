@@ -31,6 +31,7 @@ class CustomDocument extends Document implements CustomDocumentInterface {
           <meta name="twitter:image" content={`${this.url}/ogp.png`}></meta>
           <link rel="icon" href="/favicon.ico" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
           <Main />
