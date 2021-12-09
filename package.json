@@ -13,7 +13,7 @@
     "puppeteer-storyshots": "jest src/__tests__/puppeteer-storyshots*.runner.ts"
   },
   "dependencies": {
-    "next": "9.3.0",
+    "next": "11.1.3",
     "react": "16.13.0",
     "react-dom": "16.13.0"
   },
